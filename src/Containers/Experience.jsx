@@ -1,18 +1,20 @@
 import React, { Component } from 'react';
+import ExperienceCard from '../Components/ExperienceCard';
 
 class Experience extends Component {
     state = {  }
     render() { 
         let {data} = this.props.content;
         return ( 
-            <div>
+            <section>
+                <h1>experience</h1>
                 {/* Experience Switcher */}
                 {data.map((element, index) => {
                     return (
-                        <div>{element.title}</div>
+                        <ExperienceCard key={index} content={element}/>
                     );
                 })}
-            </div>
+            </section>
          );
     }
 }

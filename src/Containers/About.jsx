@@ -5,7 +5,7 @@ class About extends Component {
     render() { 
         let {content, technologies} = this.props;
         return ( 
-            <div>
+            <section>
                 <h1 className="section-title">about</h1>
                 <div className="content-card">
                     {/* Image */}
@@ -19,12 +19,12 @@ class About extends Component {
                     <ul>
                         {technologies.map((technology, index) => {
                             return (
-                                <li>{technology}</li>
+                                <li key={index}>{technology}</li>
                             )
                         })}
                     </ul>
                 </div>
-            </div>  
+            </section>  
         );
     }
 }

@@ -12,17 +12,11 @@ class Main extends Component {
     render() { 
         return ( 
             <div>
-                <section>
-                    <Landing/>
-                </section>
+                <Landing/>
 
-                <section>
-                    <About content={AboutContent.content} technologies={AboutContent.technologies}/>
-                </section>
+                <About content={AboutContent.content} technologies={AboutContent.technologies}/>
 
-                <section>
-                    <Experience content={ExperienceContent}/>
-                </section>
+                <Experience content={ExperienceContent}/>
 
             </div>
          );
