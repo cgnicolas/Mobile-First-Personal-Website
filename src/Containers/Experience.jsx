@@ -6,14 +6,16 @@ class Experience extends Component {
     render() { 
         let {data} = this.props.content;
         return ( 
-            <section>
-                <h1>experience</h1>
-                {/* Experience Switcher */}
-                {data.map((element, index) => {
-                    return (
-                        <ExperienceCard key={index} content={element}/>
-                    );
-                })}
+            <section className="experience-section grid">
+                <div className="content-wrap">
+                    <h1 className="section-title">experience</h1>
+                    {/* Experience Switcher */}
+                    {data.map((element, index) => {
+                        return (
+                            <ExperienceCard key={index} content={element}/>
+                        );
+                    })}
+                </div>
             </section>
          );
     }

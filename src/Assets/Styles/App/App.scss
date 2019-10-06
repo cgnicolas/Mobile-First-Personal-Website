@@ -1,4 +1,57 @@
+$blue: #006BC5;
 html {
     margin: 0;
     padding: 0;
+}
+h1 {
+    font-size: 2em;
+    margin: 0;
+    padding: .5em 0em;
+}
+h2 {
+    font-size: 1.5em;
+    margin:0;
+}
+p {
+    font-size: .87em;
+}
+section {
+    height: 100vh;
+    width: 100%;
+}
+.landing-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .landing-content {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contactButton {
+        height: 3em;
+        width: 21em;
+        border-radius: 3em;
+        margin-top: 2em;
+        background-color: $blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        box-shadow: 0px 3px 6px rgba(0,0,0,.33);
+    }
+
+    .contactButton:hover {
+        cursor: pointer;
+    }
+}
+.about-section {
+    background-color: $blue;
+    color: white;
 }

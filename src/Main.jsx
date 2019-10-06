@@ -13,11 +13,8 @@ class Main extends Component {
         return ( 
             <div>
                 <Landing/>
-
                 <About content={AboutContent.content} technologies={AboutContent.technologies}/>
-
                 <Experience content={ExperienceContent}/>
-
             </div>
          );
     }

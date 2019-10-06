@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
-
+import ContactButton from '../Components/ContactButton';
 class Landing extends Component {
     state = {  }
     render() { 
         return ( 
-            <section>
-                <h1>Hi there! I'm Cedric.</h1>
-                <h2>I'm a Software Devloper.</h2>
-                {/* Button Goes Here */}
+            <section className="landing-section">
+                <div className="landing-content">
+                    <h1>Hi there! I'm Cedric.</h1>
+                    <h2>I'm a Software Devloper.</h2>
+                    {/* <button name="Get In Touch" type="button" className="contactButton"></button> */}
+                    <ContactButton/>
+                </div>
             </section>
          );
     }

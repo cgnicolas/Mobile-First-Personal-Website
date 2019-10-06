@@ -5,24 +5,26 @@ class About extends Component {
     render() { 
         let {content, technologies} = this.props;
         return ( 
-            <section>
-                <h1 className="section-title">about</h1>
-                <div className="content-card">
-                    {/* Image */}
-                    {content.map((element, index) => {
-                        return (
-                            <p key={index} className="text-content">{element}</p>
-                        )
-                    })}
-                </div>
-                <div className="technologies">
-                    <ul>
-                        {technologies.map((technology, index) => {
+            <section className="about-section grid">
+                <div className="content-wrap">
+                    <h1 className="section-title">about</h1>
+                    <div className="content-card">
+                        {/* Image */}
+                        {content.map((element, index) => {
                             return (
-                                <li key={index}>{technology}</li>
+                                <p key={index} className="text-content">{element}</p>
                             )
                         })}
-                    </ul>
+                    </div>
+                    <div className="technologies">
+                        <ul>
+                            {technologies.map((technology, index) => {
+                                return (
+                                    <li key={index}>{technology}</li>
+                                )
+                            })}
+                        </ul>
+                    </div>
                 </div>
             </section>  
         );

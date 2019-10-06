@@ -2,4 +2,83 @@ html {
   margin: 0;
   padding: 0;
 }
+
+h1 {
+  font-size: 2em;
+  margin: 0;
+  padding: .5em 0em;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+p {
+  font-size: .87em;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+}
+
+.landing-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.landing-section .landing-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.landing-section .contactButton {
+  height: 3em;
+  width: 21em;
+  border-radius: 3em;
+  margin-top: 2em;
+  background-color: #006BC5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.33);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.33);
+}
+
+.landing-section .contactButton:hover {
+  cursor: pointer;
+}
+
+.about-section {
+  background-color: #006BC5;
+  color: white;
+}
 /*# sourceMappingURL=App.css.map */
