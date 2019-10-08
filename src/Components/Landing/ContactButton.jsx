@@ -5,7 +5,7 @@ class ContactButton extends Component {
     render() { 
         return ( 
             <div className="contactButton">
-                <span className="buttonTitle">Get In Contact</span>
+                <span className="buttonTitle">{this.props.buttonTitle}</span>
             </div>
          );
     }

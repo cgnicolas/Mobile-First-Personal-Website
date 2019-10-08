@@ -8,12 +8,12 @@ body {
     background-color: $blue;
 }
 h1 {
-    font-size: 2em;
+    font-size: 1.75em;
     margin: 0;
     padding: .5em 0em;
 }
 h2 {
-    font-size: 1.5em;
+    font-size: 1.25em;
     margin:0;
 }
 p {
@@ -37,7 +37,7 @@ section {
         padding: 2em;
         border-radius: 27px;
         box-shadow: 0px 3px 6px rgba(0,0,0,.33);
-        text-align: center;
+        // text-align: center;
     }
 
     .landing-content {
@@ -51,7 +51,7 @@ section {
 
     .contactButton {
         height: 3em;
-        width: 21em;
+        width: 10em;
         border-radius: 3em;
         margin-top: 2em;
         background-color: $blue;
@@ -84,7 +84,6 @@ section {
         border-radius: 27px;
         font-size: 1em;
         width: 75%;
-        height: 80%;
         align-self: center;
         padding: 1em;
         box-shadow: 0px 3px 6px rgba(0,0,0,.33);
