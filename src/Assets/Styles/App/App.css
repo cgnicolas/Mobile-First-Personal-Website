@@ -86,10 +86,6 @@ section {
   color: white;
 }
 
-.about-section ul {
-  list-style-type: none;
-}
-
 .about-section .content-wrap {
   width: 100%;
   height: 100%;
@@ -105,8 +101,8 @@ section {
 .about-section .content-card {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 20% 15% 10% auto;
-      grid-template-rows: 20% 15% 10% auto;
+  -ms-grid-rows: .25fr .20fr .15fr .10fr auto;
+      grid-template-rows: .25fr .20fr .15fr .10fr auto;
   background-color: white;
   color: black;
   font-family: 'Montserrat-Medium', sans-serif;
@@ -119,5 +115,23 @@ section {
   padding: 1em;
   -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.33);
           box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.33);
+}
+
+.about-section img {
+  width: 50%;
+  height: auto;
+  -webkit-clip-path: circle(40% at center);
+          clip-path: circle(40% at center);
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.33);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.33);
+}
+
+.about-section ul {
+  list-style-type: none;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
 }
 /*# sourceMappingURL=App.css.map */

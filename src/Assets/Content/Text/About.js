@@ -8,6 +8,8 @@ export default {
         "React",
         "React Native",
         "Node.js",
+        "Express",
+        "Javascript",
         "HTML/(S)CSS"
     ]
 }

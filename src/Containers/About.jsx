@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import selfPhoto from '../Assets/Content/Images/selfPhoto.jpg';
 class About extends Component {
     state = {  }
     render() { 
@@ -9,7 +9,7 @@ class About extends Component {
                 <div className="content-wrap">
                     <h1 className="section-title">about</h1>
                     <div className="content-card">
-                        {/* Image */}
+                        <img src={selfPhoto} className='selfPhoto' alt="photo_of_me"/>
                         {content.map((element, index) => {
                             return (
                                 <p key={index} className="text-content">{element}</p>

@@ -4,8 +4,8 @@ import About from './Containers/About';
 import Experience from './Containers/Experience';
 
 //Text Content to possibly eventually come from an API
-import AboutContent from './Assets/Content/About';
-import ExperienceContent from './Assets/Content/Experience';
+import AboutContent from './Assets/Content/Text/About';
+import ExperienceContent from './Assets/Content/Text/Experience';
 class Main extends Component {
     state = { 
     }
