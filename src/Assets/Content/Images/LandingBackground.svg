@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="413.55" height="895.847" viewBox="0 0 413.55 895.847">
+    <defs>
+        <filter id="filter1" x="0" y="0">
+            <feOffset result="offOut" in="SourceAlpha" dx="-5" dy="-5" />
+            <feGaussianBlur result="blurOut" in="offOut" stdDeviation="3" />
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+      </filter>
+  </defs>
+  <path id="Path_8" data-name="Path 8" d="M2409,6768l413.55,231.814v664.032H2409Z" transform="translate(-2409 -6768)" fill="#fff"/>
+</svg>

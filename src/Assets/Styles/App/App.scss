@@ -5,6 +5,7 @@ html {
 }
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color: $blue;
 }
 h1 {
     font-size: 2em;
@@ -26,7 +27,19 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    // background-image: url('../../Content/Images/LandingBackground.svg');
+    // background-repeat: no-repeat;
+    // background-position-x: 0%;
+    // background-size: 100%;
+    
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+        filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 1))
+    }
 
     .landing-content {
         display: flex;
