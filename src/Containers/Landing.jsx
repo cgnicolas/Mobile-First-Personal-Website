@@ -7,11 +7,11 @@ class Landing extends Component {
         return ( 
             <section className="landing-section">
                 <div className="landing-content">
-                    <img src={landingBackground} alt="background_image"/>
-                    <h1>Hi there! I'm Cedric.</h1>
-                    <h2>I'm a Software Developer.</h2>
-                    {/* <button name="Get In Touch" type="button" className="contactButton"></button> */}
-                    <ContactButton/>
+                    <div className="landing-card">
+                        <h1>Hi there! I'm Cedric.</h1>
+                        <h2>I'm a Software Developer.</h2>
+                        <ContactButton/>
+                    </div>
                 </div>
             </section>
          );
