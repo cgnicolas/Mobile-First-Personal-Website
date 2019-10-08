@@ -15,15 +15,15 @@ class About extends Component {
                                 <p key={index} className="text-content">{element}</p>
                             )
                         })}
-                    </div>
-                    <div className="technologies">
-                        <ul>
-                            {technologies.map((technology, index) => {
-                                return (
-                                    <li key={index}>{technology}</li>
-                                )
-                            })}
-                        </ul>
+                        <div className="technologies">
+                            <ul>
+                                {technologies.map((technology, index) => {
+                                    return (
+                                        <li key={index}>{technology}</li>
+                                    )
+                                })}
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </section>  
