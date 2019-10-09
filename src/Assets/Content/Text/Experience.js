@@ -8,13 +8,13 @@ export default {
             "Participated in a nationwide Intern Hackathon to build a mobile food ordering application using React Native"
         ]
         },
-        // {
-        //     title: "Design For X Lab",
-        //     descriptions: ["Lorem Ipsum", "Lorem Ipsum", "Lorem Ipsum"]
-        // },
-        // {
-        //     title: "Citi Bank",
-        //     descriptions: ["Lorem Ipsum", "Lorem Ipsum", "Lorem Ipsum"]
-        // },
+        {
+            title: "Design For X Lab",
+            descriptions: ["Lorem Ipsum", "Lorem Ipsum", "Lorem Ipsum"]
+        },
+        {
+            title: "Citi Bank",
+            descriptions: ["Lorem Ipsum", "Lorem Ipsum", "Lorem Ipsum"]
+        },
     ]
 }

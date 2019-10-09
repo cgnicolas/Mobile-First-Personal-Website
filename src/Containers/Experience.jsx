@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ExperienceCard from '../Components/Experience/ExperienceCard';
 import ExperienceSwitcher from '../Components/Experience/ExperienceSwitcher';
+import Slider from '../Components/Experience/Slider';
 class Experience extends Component {
     state = { 
         formal: true,
@@ -11,6 +12,7 @@ class Experience extends Component {
          super(props);
 
          this.changeExperience = this.changeExperience.bind(this);
+         this.changeActiveCard = this.changeActiveCard.bind(this);
 
      }
 
@@ -18,6 +20,19 @@ class Experience extends Component {
         this.setState({
             formal: !this.state.formal,
         })
+    }
+
+    changeActiveCard(direction) {
+        let {activeCard} = this.state;
+        let {data} = this.props.content;
+        if(direction && activeCard + 1 < data.length){
+            activeCard++;
+            this.setState({activeCard});
+        } else if(!direction && activeCard > 0) {
+            activeCard--;
+            this.setState({activeCard});
+        }
+        console.log(activeCard)
     }
 
     render() { 
@@ -37,6 +52,7 @@ class Experience extends Component {
                         })}
                         <div></div>
                     </div>
+                    <Slider handleClick={this.changeActiveCard}/>
                 </div>
             </section>
          );

@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
 
 class Slider extends Component {
-    state = { 
-        currentItem: 0
-    }
     render() { 
-        let {list} = this.props;
-        let {currentItem} = this.state;
+        let {list, activeCard} = this.props;
         return ( 
-            <div>
-
+            <div className="experience-slider">
+                <button type="button" onClick={() => {this.props.handleClick(0)}}>Prev</button>
+                <button type="button" onClick={() => {this.props.handleClick(1)}}>Next</button>
             </div>
          );
     }
