@@ -19,7 +19,7 @@ class About extends Component {
                             <ul>
                                 {technologies.map((technology, index) => {
                                     return (
-                                        <li key={index}>{technology}</li>
+                                        <li key={index}><p>{technology}</p></li>
                                     )
                                 })}
                             </ul>
