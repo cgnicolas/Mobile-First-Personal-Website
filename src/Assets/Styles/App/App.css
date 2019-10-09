@@ -179,4 +179,13 @@ section {
 .experience-section .active-card {
   display: block;
 }
+
+.experience-section .experience-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
 /*# sourceMappingURL=App.css.map */
