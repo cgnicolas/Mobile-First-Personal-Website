@@ -1,4 +1,7 @@
 $blue: #006BC5;
+$pSize: .87em;
+$h1Size: 1.75em;
+$h2Size: 1.25em;
 html {
     margin: 0;
     padding: 0;
@@ -8,16 +11,16 @@ body {
     background-color: $blue;
 }
 h1 {
-    font-size: 1.75em;
+    font-size: $h1Size;
     margin: 0;
     padding: .5em 0em;
 }
 h2 {
-    font-size: 1.25em;
+    font-size: $h2Size;
     margin:0;
 }
 p {
-    font-size: .87em;
+    font-size: $pSize;
 }
 section {
     height: 100vh;
@@ -65,10 +68,10 @@ section {
     }
 
     .contactButton {
-        height: 3em;
-        width: 10em;
+        // height: 3em;
+        width: 50%;
         border-radius: 3em;
-        margin-top: 2em;
+        margin-top: 1em;
         background-color: $blue;
         display: flex;
         justify-content: center;
@@ -125,7 +128,7 @@ section {
         color: black;
         background-color: white;
         border-radius: 42px;
-        height: 400px;
+        height: 20 * $pSize;
         // width: 347px;
         text-align: left;
         display: none;
@@ -144,5 +147,23 @@ section {
         justify-content: space-around;
         width: 100%;
         // background-color: red;
+    }
+}
+
+@media screen and (max-width: 20em){
+    $pSize: .5em;
+    $h1Size: 1.25em;
+    $h2Size: .75em;
+    h1 {
+        font-size: $h1Size;
+        margin: 0;
+        padding: .5em 0em;
+    }
+    h2 {
+        font-size: $h2Size;
+        margin:0;
+    }
+    p {
+        font-size: $pSize;
     }
 }
