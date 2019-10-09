@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import ExperienceCard from '../Components/ExperienceCard';
-import ExperienceSwitcher from '../Components/ExperienceSwitcher';
+import ExperienceCard from '../Components/Experience/ExperienceCard';
+import ExperienceSwitcher from '../Components/Experience/ExperienceSwitcher';
 class Experience extends Component {
     state = { 
         formal: true
@@ -26,11 +26,13 @@ class Experience extends Component {
                 <div className="content-wrap">
                     <h1 className="section-title">experience</h1>
                     <ExperienceSwitcher formal={this.state.formal} changeExperience={() => {this.changeExperience()}}/>
-                    {data.map((element, index) => {
-                        return (
-                            <ExperienceCard key={index} content={element}/>
-                        );
-                    })}
+                    <div className="experience-card-content-wrap">
+                        {data.map((element, index) => {
+                            return (
+                                <ExperienceCard key={index} content={element}/>
+                            );
+                        })}
+                    </div>
                 </div>
             </section>
          );

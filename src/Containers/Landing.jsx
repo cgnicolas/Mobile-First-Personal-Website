@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ContactButton from '../Components/ContactButton';
+import ContactButton from '../Components/Landing/ContactButton';
 class Landing extends Component {
     state = {  }
     render() { 
