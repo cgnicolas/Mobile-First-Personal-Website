@@ -165,8 +165,11 @@ section {
   color: black;
   background-color: white;
   border-radius: 42px;
+  height: 400px;
   text-align: left;
   display: none;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.33);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.33);
 }
 
 .experience-section .experience-card .experience-card-content-wrap {
