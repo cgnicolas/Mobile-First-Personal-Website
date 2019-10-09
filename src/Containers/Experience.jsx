@@ -3,7 +3,8 @@ import ExperienceCard from '../Components/Experience/ExperienceCard';
 import ExperienceSwitcher from '../Components/Experience/ExperienceSwitcher';
 class Experience extends Component {
     state = { 
-        formal: true
+        formal: true,
+        activeCard: 0
      }
     
      constructor(props){
@@ -21,17 +22,20 @@ class Experience extends Component {
 
     render() { 
         let {data} = this.props.content;
+        let {activeCard} = this.state;
         return ( 
             <section className="experience-section grid">
                 <div className="content-wrap">
                     <h1 className="section-title">experience</h1>
-                    <ExperienceSwitcher formal={this.state.formal} changeExperience={() => {this.changeExperience()}}/>
-                    <div className="experience-card-content-wrap">
+                    {/* <ExperienceSwitcher formal={this.state.formal} changeExperience={() => {this.changeExperience()}}/> */}
+                    <div className="experience-card-wrap">
+                        <div></div>
                         {data.map((element, index) => {
                             return (
-                                <ExperienceCard key={index} content={element}/>
+                                <ExperienceCard key={index} content={element} active={(index === activeCard)}/>
                             );
                         })}
+                        <div></div>
                     </div>
                 </div>
             </section>

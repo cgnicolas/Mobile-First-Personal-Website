@@ -22,7 +22,10 @@ p {
 section {
     height: 100vh;
     width: 100%;
-    display: flex;
+}
+.section-title {
+    color: white;
+    // background-color: red;
 }
 .content-wrap {
     width: 100%;
@@ -30,6 +33,9 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    // display: grid;
+    // grid-template-rows: 10% auto;
 }
 
 .landing-section {
@@ -78,7 +84,6 @@ section {
 }
 .about-section {
     background-color: $blue;
-    color: white;
     .content-card {
         display: grid;
         grid-template-rows: .25fr .20fr .15fr .10fr auto;
@@ -108,16 +113,29 @@ section {
 }
 
 .experience-section {
-    .section-title {
-        color: white;
-    }
-    .experience-card-content-wrap {
-        display: flex;
+    
+    .experience-card-wrap {
+        display: grid;
+        grid-template-columns: 7% auto 7%;
+        // justify-content: center;
+        // background-color: black;
+        // align-items: center;
     }
     .experience-card {
         color: black;
         background-color: white;
         border-radius: 42px;
-        padding: 3em;
+        // height: 400px;
+        // width: 347px;
+        text-align: left;
+        display: none;
+
+        .experience-card-content-wrap {
+            margin: 1.5em;
+        }
+
+    }
+    .active-card {
+        display: block;
     }
 }

@@ -26,9 +26,10 @@ p {
 section {
   height: 100vh;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+}
+
+.section-title {
+  color: white;
 }
 
 .content-wrap {
@@ -44,6 +45,9 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .landing-section {
@@ -112,7 +116,6 @@ section {
 
 .about-section {
   background-color: #006BC5;
-  color: white;
 }
 
 .about-section .content-card {
@@ -151,20 +154,26 @@ section {
           box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.33);
 }
 
-.experience-section .section-title {
-  color: white;
-}
-
-.experience-section .experience-card-content-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.experience-section .experience-card-wrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 7% auto 7%;
+      grid-template-columns: 7% auto 7%;
 }
 
 .experience-section .experience-card {
   color: black;
   background-color: white;
   border-radius: 42px;
-  padding: 3em;
+  text-align: left;
+  display: none;
+}
+
+.experience-section .experience-card .experience-card-content-wrap {
+  margin: 1.5em;
+}
+
+.experience-section .active-card {
+  display: block;
 }
 /*# sourceMappingURL=App.css.map */
