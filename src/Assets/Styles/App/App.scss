@@ -209,10 +209,6 @@ section {
         grid-template-columns: .5fr .5fr;
         grid-template-areas: 
         "about-content photo";
-        // grid-template-areas: 
-        // "experiences"
-        // "experiences photo"
-        // "technolgoies";
     }
     .photo-wrapper {
         grid-area: photo;
