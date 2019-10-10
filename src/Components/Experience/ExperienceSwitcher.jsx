@@ -8,7 +8,6 @@ class ExperienceSwitcher extends Component {
     render() {
         let {changeExperience} = this.props;
         let {formal} = this.props;
-        console.log(formal);
         return (
             <div className="experience-switcher">
                 <div className="experience-switcher-content-wrap">

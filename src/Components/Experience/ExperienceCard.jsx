@@ -10,13 +10,12 @@ class ExperienceCard extends Component {
                     <div className="experience-card-content-wrap">
                         <h2>{content.title}</h2>
                         <h5>{content.position}</h5>
-                        <ul>
                             {content.descriptions.map((description, index) => {
                                 return (
-                                    <li key={index}><p>{description}</p></li>
+                                    // <li key={index}><p>{description}</p></li>
+                                    <p key={index}>{description}</p>
                                 )
                             })}
-                        </ul>
                     </div>
                 </div>
             </div>

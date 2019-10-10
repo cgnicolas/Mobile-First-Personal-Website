@@ -50,11 +50,8 @@ section {
     // background-position-x: 0%;
     // background-size: 100%;
     .emoji {
-        position: absolute;
         font-size: 2 * $h1Size;
         top: $h1Size;
-        left: auto;
-        right: auto;
     }
     .landing-card {
         background-color: white;
@@ -205,10 +202,14 @@ section {
         font-size: $h2Size;
         margin:0;
     }
+    h5 {
+        font-size: .6em;
+    }
     p {
         font-size: $pSize;
     }
 }
+
 
 @media screen and (min-width: 60em){
     .content-card {
