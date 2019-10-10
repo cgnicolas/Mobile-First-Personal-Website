@@ -208,7 +208,7 @@ section {
     .content-card {
         grid-template-columns: .5fr .5fr;
         grid-template-areas: 
-        "about-content photo"
+        "about-content photo";
         // grid-template-areas: 
         // "experiences"
         // "experiences photo"
@@ -218,6 +218,13 @@ section {
         grid-area: photo;
         height: 100%;
         width: 100%;
+        img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            clip-path: none;
+            border-radius: 27px;
+        }
     }
     .about-content {
         grid-area: about-content;
