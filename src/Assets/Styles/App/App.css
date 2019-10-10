@@ -255,6 +255,15 @@ section {
   outline: none;
 }
 
+.experience-section .active-button {
+  background-color: white;
+}
+
+.experience-section .inactive {
+  background-color: transparent;
+  color: white;
+}
+
 @media screen and (max-width: 20em) {
   h1 {
     font-size: 1.25em;
