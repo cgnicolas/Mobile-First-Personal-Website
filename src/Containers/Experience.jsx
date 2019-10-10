@@ -58,6 +58,8 @@ class Experience extends Component {
                                                 <ExperienceCard content={element}/>
                                             </div>
                                         )
+                                    } else {
+                                        return null;
                                     }
                                 })}
                             </Slider>

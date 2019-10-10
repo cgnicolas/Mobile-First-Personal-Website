@@ -19,6 +19,9 @@ h2 {
     font-size: $h2Size;
     margin:0;
 }
+h5 {
+    margin: 1em 0 0 0;
+}
 p {
     font-size: $pSize;
 }
@@ -79,7 +82,7 @@ section {
         justify-content: center;
         align-items: center;
         color: white;
-        box-shadow: 0px 3px 6px rgba(0,0,0,.33);
+        // box-shadow: 0px 3px 6px rgba(0,0,0,.33);
     }
     .contactGroup {
         margin-top: 1em;
@@ -91,9 +94,11 @@ section {
     .octoCat {
         height: 1.5 * $h1Size;
     }
+    .resume-button {
+        height: 1.5 * $h1Size;
+    }
     .contactButton:hover {
         cursor: pointer;
-        box-shadow: inset 0px 3px 6px rgba(0,0,0,.33);
     }
 }
 .about-section {
@@ -108,7 +113,7 @@ section {
         font-size: 1em;
         width: 75%;
         align-self: center;
-        padding: 1em;
+        padding: 2em;
         box-shadow: 0px 3px 6px rgba(0,0,0,.33);
         ul {
             list-style-type: none;
@@ -138,6 +143,7 @@ section {
     
     .slider-wrap {
         width: 80%;
+        max-width: 410px;
     }
     .experience-card-wrapper {
         height: 100%;
@@ -156,6 +162,7 @@ section {
         text-align: left;
         box-shadow: 0px 3px 6px rgba(0,0,0,.33);
         padding: 1em;
+        margin-bottom: 1em;
         .experience-card-content-wrap {
             margin: 1.5em;
         }
@@ -189,10 +196,10 @@ section {
     }
 }
 
-@media screen and (max-width: 20em){
-    $pSize: .5em;
-    $h1Size: 1.25em;
-    $h2Size: .75em;
+@media screen and (min-width: 20em){
+    $pSize: .6em;
+    $h1Size: 1.5em;
+    $h2Size: 1.25em;
     h1 {
         font-size: $h1Size;
         margin: 0;
@@ -210,12 +217,54 @@ section {
     }
 }
 
+@media screen and (min-width: 40em){
+    $pSize: .87em;
+    $h1Size: 1.75em;
+    $h2Size: 1.25em;
+    h1 {
+        font-size: $h1Size;
+        margin: 0;
+        padding: .5em 0em;
+    }
+    h2 {
+        font-size: $h2Size;
+        margin:0;
+    }
+    h5 {
+        font-size: .87em;
+    }
+    p {
+        font-size: $pSize;
+    }
+}
+
 
 @media screen and (min-width: 60em){
-    .content-card {
-        grid-template-columns: .5fr .5fr;
-        grid-template-areas: 
-        "about-content photo";
+    $pSize: .87em;
+    $h1Size: 1.75em;
+    $h2Size: 1.25em;
+    h1 {
+        font-size: $h1Size;
+        margin: 0;
+        padding: .5em 0em;
+    }
+    h2 {
+        font-size: $h2Size;
+        margin:0;
+    }
+    h5 {
+        font-size: .87em;
+    }
+    p {
+        font-size: $pSize;
+    }
+    .about-section {
+        .content-card {
+            padding: 4em 2em;
+            grid-template-columns: .5fr .5fr;
+            grid-template-areas: 
+            "about-content photo";
+        }
     }
     .photo-wrapper {
         grid-area: photo;
