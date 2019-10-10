@@ -9,6 +9,7 @@ class ExperienceCard extends Component {
                 <div className={"experience-card " + ((active) ? ("active-card") : (""))}>
                     <div className="experience-card-content-wrap">
                         <h2>{content.title}</h2>
+                        <h5>{content.position}</h5>
                         <ul>
                             {content.descriptions.map((description, index) => {
                                 return (
