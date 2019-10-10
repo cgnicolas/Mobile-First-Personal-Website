@@ -117,36 +117,30 @@ section {
 
 .experience-section {
     
-    .experience-card-wrap {
-        display: grid;
-        grid-template-columns: 7% auto 7%;
-        // justify-content: center;
-        // background-color: black;
-        // align-items: center;
+    .slider-wrap {
+        width: 80%;
+    }
+    .experience-card-wrapper {
+        height: 100%;
+        width: 100%;
+        // background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .experience-card {
         color: black;
         background-color: white;
         border-radius: 42px;
-        height: 20 * $pSize;
-        // width: 347px;
+        height: 30 * $pSize;
+        width: 80%;
         text-align: left;
-        display: none;
+        // display: none;
         box-shadow: 0px 3px 6px rgba(0,0,0,.33);
-
+        padding: 1em;
         .experience-card-content-wrap {
             margin: 1.5em;
         }
-
-    }
-    .active-card {
-        display: block;
-    }
-    .experience-slider {
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-        // background-color: red;
     }
 }
 

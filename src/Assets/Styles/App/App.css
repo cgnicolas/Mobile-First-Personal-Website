@@ -153,39 +153,38 @@ section {
           box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.33);
 }
 
-.experience-section .experience-card-wrap {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 7% auto 7%;
-      grid-template-columns: 7% auto 7%;
+.experience-section .slider-wrap {
+  width: 80%;
+}
+
+.experience-section .experience-card-wrapper {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .experience-section .experience-card {
   color: black;
   background-color: white;
   border-radius: 42px;
-  height: 17.4em;
+  height: 26.1em;
+  width: 80%;
   text-align: left;
-  display: none;
   -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.33);
           box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.33);
+  padding: 1em;
 }
 
 .experience-section .experience-card .experience-card-content-wrap {
   margin: 1.5em;
-}
-
-.experience-section .active-card {
-  display: block;
-}
-
-.experience-section .experience-slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 100%;
 }
 
 @media screen and (max-width: 20em) {

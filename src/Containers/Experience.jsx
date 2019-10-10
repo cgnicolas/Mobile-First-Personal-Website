@@ -1,7 +1,14 @@
 import React, { Component } from 'react';
 import ExperienceCard from '../Components/Experience/ExperienceCard';
-import ExperienceSwitcher from '../Components/Experience/ExperienceSwitcher';
-import Slider from '../Components/Experience/Slider';
+// import ExperienceSwitcher from '../Components/Experience/ExperienceSwitcher';
+// import Slider from '../Components/Experience/Slider';
+// import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
+// import 'pure-react-carousel/dist/react-carousel.es.css';
+//React-Slick uses slick-carousel as well
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+
 class Experience extends Component {
     state = { 
         formal: true,
@@ -38,22 +45,44 @@ class Experience extends Component {
     render() { 
         let {data} = this.props.content;
         let {activeCard} = this.state;
+        const settings = {
+            dots: true,
+            infinite: false,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          };
         return ( 
             <section className="experience-section grid">
                 <div className="content-wrap">
                     <h1 className="section-title">experience</h1>
-                    {/* <ExperienceSwitcher formal={this.state.formal} changeExperience={() => {this.changeExperience()}}/> */}
-                    <div className="experience-card-wrap">
-                        <div></div>
-                        {data.map((element, index) => {
-                            return (
-                                <ExperienceCard key={index} content={element} active={(index === activeCard)}/>
-                            );
-                        })}
-                        <div></div>
+                        {/* <CarouselProvider
+                        naturalSlideWidth={347}
+                        naturalSlideHeight={400}
+                        totalSlides={data.length}
+                        >
+                            <Slider>
+                                {data.map((element, index) => {
+                                    return (
+                                        <Slide index={index}><ExperienceCard content={element}/></Slide>
+                                    )
+                                })}
+                            </Slider>
+                            <ButtonBack>Back</ButtonBack>
+                            <ButtonNext>Next</ButtonNext>
+                        </CarouselProvider> */}
+                        <div className="slider-wrap">
+                            <Slider {...settings}>
+                                {data.map((element, index) => {
+                                    return (
+                                        <div key={index} className="slide-wrap">
+                                            <ExperienceCard content={element}/>
+                                        </div>
+                                    )
+                                })}
+                            </Slider>
+                        </div>
                     </div>
-                    <Slider handleClick={this.changeActiveCard}/>
-                </div>
             </section>
          );
     }
