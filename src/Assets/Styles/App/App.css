@@ -145,8 +145,8 @@ section {
 .about-section .content-card {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: .25fr .20fr .15fr .10fr auto;
-      grid-template-rows: .25fr .20fr .15fr .10fr auto;
+  -ms-grid-rows: .25fr auto;
+      grid-template-rows: .25fr auto;
   background-color: white;
   color: black;
   font-family: 'Montserrat-Medium', sans-serif;
@@ -165,6 +165,20 @@ section {
   columns: 2;
   -webkit-columns: 2;
   -moz-columns: 2;
+}
+
+.about-section .content-card ul p {
+  margin: 0;
+}
+
+.about-section .photo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
 }
 
 .about-section img {
@@ -200,7 +214,7 @@ section {
   color: black;
   background-color: white;
   border-radius: 42px;
-  height: 23.055em;
+  min-height: 23.055em;
   width: 80%;
   text-align: left;
   -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.33);
@@ -210,6 +224,31 @@ section {
 
 .experience-section .experience-card .experience-card-content-wrap {
   margin: 1.5em;
+}
+
+.experience-section .experience-switcher {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.experience-section .experience-switcher button {
+  border: none;
+  margin: 0 .1em;
+  padding: .5em 1em;
+  font-weight: 700;
+}
+
+.experience-section .experience-switcher button:focus {
+  outline: none;
+}
+
+.experience-section .experience-switcher .experience-switcher-content-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .experience-section div:focus {
@@ -228,6 +267,26 @@ section {
   }
   p {
     font-size: 0.5em;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .content-card {
+    -ms-grid-columns: .5fr .5fr;
+        grid-template-columns: .5fr .5fr;
+        grid-template-areas: "about-content photo";
+  }
+  .photo-wrapper {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: photo;
+    height: 100%;
+    width: 100%;
+  }
+  .about-content {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: about-content;
   }
 }
 /*# sourceMappingURL=App.css.map */
