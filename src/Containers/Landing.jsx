@@ -6,6 +6,7 @@ class Landing extends Component {
         return ( 
             <section className="landing-section">
                 <div className="landing-content">
+                    <h1 className="emoji"><span role="img" aria-label="waving-emoji">👋</span></h1>
                     <div className="landing-card">
                         <h1>Hi there! I'm Cedric.</h1>
                         <h2>I'm a Software Developer.</h2>

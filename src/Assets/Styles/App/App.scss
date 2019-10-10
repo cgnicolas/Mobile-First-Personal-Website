@@ -49,7 +49,9 @@ section {
     // background-repeat: no-repeat;
     // background-position-x: 0%;
     // background-size: 100%;
-    
+    .emoji {
+        font-size: 2 * $h1Size;
+    }
     .landing-card {
         background-color: white;
         padding: 2em;
@@ -132,15 +134,18 @@ section {
         color: black;
         background-color: white;
         border-radius: 42px;
-        height: 30 * $pSize;
+        height: 26.5 * $pSize;
+        // height: auto;
         width: 80%;
         text-align: left;
-        // display: none;
         box-shadow: 0px 3px 6px rgba(0,0,0,.33);
         padding: 1em;
         .experience-card-content-wrap {
             margin: 1.5em;
         }
+    }
+    div:focus {
+        outline: none;
     }
 }
 
